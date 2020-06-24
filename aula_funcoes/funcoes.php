@@ -32,7 +32,9 @@ function maior($a, $b, $c = null) {
 function tabela($base, $limite = null) {
 
     global $numero_magico;
-    if ($limite === null) $limite = $numero_magico;
+    if ($limite === null) {
+        $limite = $numero_magico;
+    }
 
     $array = [];
     for ($i = $base ; $i < $limite ; $i++) {
